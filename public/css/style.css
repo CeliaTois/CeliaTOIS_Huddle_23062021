@@ -1,0 +1,184 @@
+/* Register Button */
+/* Socials Medias */
+/* Footer */
+body {
+  background: url(../../images/bg-mobile.svg) no-repeat, #674baf;
+  padding: 30px;
+}
+@media (min-width: 1280px) {
+  body {
+    background: url(../../images/bg-desktop.svg) no-repeat, #674baf;
+    padding: 50px 70px 0 70px;
+  }
+}
+
+#logo {
+  width: 130px;
+}
+@media (min-width: 1280px) {
+  #logo {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #landing-page {
+    display: flex;
+    margin-top: 75px;
+  }
+}
+@media (min-width: 1280px) {
+  #landing-page__text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-left: 65px;
+  }
+}
+
+#main-illustration {
+  width: 100%;
+  margin: 50px 0;
+}
+@media (min-width: 1280px) {
+  #main-illustration {
+    width: 55%;
+    margin: 0;
+  }
+}
+
+h1 {
+  margin: 40px 0 5px 0;
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(../../fonts/Poppins-SemiBold.ttf);
+}
+body {
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+h1 {
+  font-family: Poppins-SemiBold;
+  font-size: 25px;
+}
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+p {
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+}
+@media (min-width: 1280px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+h1, p {
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  h1, p {
+    text-align: left;
+  }
+}
+
+.attribution {
+  font-size: 10px;
+}
+
+#btn-container {
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  #btn-container {
+    text-align: left;
+  }
+}
+
+button {
+  background-color: #FFF;
+  border-radius: 20px;
+  border: none;
+  padding: 12px 78px 10px 78px;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  color: #674baf;
+  font-family: Poppins-Regular;
+  font-size: 12px;
+  box-shadow: 3px 3px 10px #3d2c68;
+  cursor: pointer;
+}
+@media (min-width: 1280px) {
+  button {
+    padding: 14px 66px 14px 66px;
+    font-size: 18px;
+    border-radius: 30px;
+  }
+}
+button:hover {
+  background-color: #e882e8;
+  color: #FFF;
+}
+
+#socials-medias {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1280px) {
+  #socials-medias {
+    justify-content: flex-end;
+    height: 50px;
+  }
+}
+#socials-medias p {
+  text-align: center;
+}
+
+.social-media {
+  border: 1px #FFF solid;
+  border-radius: 20px;
+  width: 25px;
+  height: 25px;
+  margin: 40px 5px;
+}
+.social-media__icon {
+  font-size: 12px;
+}
+@media (min-width: 1280px) {
+  .social-media__icon {
+    font-size: 16px;
+  }
+}
+.social-media:hover {
+  border: 1px #e882e8 solid;
+}
+.social-media:hover > .social-media__icon {
+  color: #e882e8;
+}
+@media (min-width: 1280px) {
+  .social-media {
+    padding: 6px;
+    margin: 30px 8px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+@mixin desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin sm-border ($color: $sm-color){
+ border: 1px $color solid;
+}
+
+@mixin btn-padding ($top: 12px, $right: 78px, $bottom: 10px, $left: 78px) {
+    padding: $top $right $bottom $left;
+}

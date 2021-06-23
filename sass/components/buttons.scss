@@ -1,0 +1,29 @@
+#btn-container {
+    text-align: center;
+    @include desktop {
+        text-align: left;
+    }
+}
+
+button {
+    background-color: $button-color;
+    border-radius: 20px;
+    border: none;
+    @include btn-padding;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    color: $bg-color;
+    font-family: $btn-font;
+    font-size: map-get($btn-size, mobile);
+    box-shadow: $btn-shadow;
+    cursor: pointer;
+    @include desktop {
+        @include btn-padding ($top: 14px, $right: 66px, $bottom: 14px, $left: 66px);
+        font-size: map-get($btn-size, desktop);
+        border-radius: 30px;
+    }
+    &:hover {
+        background-color: $hover-color;
+        color: $text-color;
+    }
+}

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../../fonts/Poppins-SemiBold.ttf);
+}
+
+body {
+    color: $text-color;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+h1 {
+    font-family: $h1-font;
+    font-size: map-get($h1-size, mobile);
+    @include desktop {
+        font-size: map-get($h1-size, desktop);
+    }
+}
+
+p {
+    font-family: $p-font;
+    font-size: map-get($p-size, mobile);
+    @include desktop {
+        font-size: map-get($p-size, desktop);
+    }
+}
+
+h1, p {
+    text-align: center;
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.attribution {
+    font-size: $footer-size;
+}

@@ -1,0 +1,44 @@
+body {
+    background: url(../../images/bg-mobile.svg) no-repeat, $bg-color;
+    padding: 30px;
+    @include desktop {
+        background: url(../../images/bg-desktop.svg) no-repeat, $bg-color;
+        padding: 50px 70px 0 70px;
+
+    }
+}
+
+#logo {
+    width: map-get($logo-width, mobile);
+    @include desktop {
+        width: map-get($logo-width, desktop);
+    }
+}
+
+#landing-page {
+    @include desktop {
+        display: flex;
+        margin-top: 75px;
+    }
+    &__text {
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            padding-left: 65px;
+        }
+    }
+}
+
+#main-illustration {
+    width: $full-width;
+    margin: 50px 0;
+    @include desktop {
+        width: 55%;
+        margin: 0;
+    }
+}
+
+h1 {
+    margin: 40px 0 5px 0;
+}

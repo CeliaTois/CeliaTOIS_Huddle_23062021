@@ -3,9 +3,10 @@
 /* Footer */
 body {
   background: url(../../images/bg-mobile.svg) no-repeat, #674baf;
+  background-size: 100%;
   padding: 30px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   body {
     background: url(../../images/bg-desktop.svg) no-repeat, #674baf;
     padding: 50px 70px 0 70px;
@@ -15,19 +16,19 @@ body {
 #logo {
   width: 130px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   #logo {
     width: 220px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   #landing-page {
     display: flex;
     margin-top: 75px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   #landing-page__text {
     display: flex;
     flex-direction: column;
@@ -35,15 +36,30 @@ body {
     padding-left: 65px;
   }
 }
+@media (min-width: 1550px) {
+  #landing-page__text {
+    width: 690px;
+  }
+}
+@media (min-width: 1550px) {
+  #landing-page {
+    justify-content: center;
+  }
+}
 
 #main-illustration {
   width: 100%;
   margin: 50px 0;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   #main-illustration {
     width: 55%;
     margin: 0;
+  }
+}
+@media (min-width: 1550px) {
+  #main-illustration {
+    width: 740px;
   }
 }
 
@@ -76,7 +92,7 @@ h1 {
   font-family: Poppins-SemiBold;
   font-size: 25px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   h1 {
     font-size: 40px;
   }
@@ -86,7 +102,7 @@ p {
   font-family: OpenSans-Regular;
   font-size: 16px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   p {
     font-size: 18px;
   }
@@ -95,7 +111,7 @@ p {
 h1, p {
   text-align: center;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   h1, p {
     text-align: left;
   }
@@ -108,7 +124,7 @@ h1, p {
 #btn-container {
   text-align: center;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   #btn-container {
     text-align: left;
   }
@@ -127,7 +143,7 @@ button {
   box-shadow: 3px 3px 10px #3d2c68;
   cursor: pointer;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   button {
     padding: 14px 66px 14px 66px;
     font-size: 18px;
@@ -143,7 +159,7 @@ button:hover {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   #socials-medias {
     justify-content: flex-end;
     height: 50px;
@@ -163,7 +179,7 @@ button:hover {
 .social-media__icon {
   font-size: 12px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   .social-media__icon {
     font-size: 16px;
   }
@@ -174,7 +190,7 @@ button:hover {
 .social-media:hover > .social-media__icon {
   color: #e882e8;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1150px) {
   .social-media {
     padding: 6px;
     margin: 30px 8px;

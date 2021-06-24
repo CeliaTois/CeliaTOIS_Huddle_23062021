@@ -1,7 +1,7 @@
 #socials-medias {
     display: flex;
     justify-content: center;
-    @include desktop {
+    @include computer {
         justify-content: flex-end;
         height: 50px;
     }
@@ -18,7 +18,7 @@
     margin: 40px 5px;
     &__icon {
         font-size: map-get($icon-size, mobile);
-        @include desktop {
+        @include computer {
             font-size: map-get($icon-size, desktop);
         }
     }
@@ -28,7 +28,7 @@
             color: $hover-color;
         }
     }
-    @include desktop {
+    @include computer {
         padding: 6px;
         margin: 30px 8px;
     }

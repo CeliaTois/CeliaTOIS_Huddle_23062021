@@ -2,10 +2,9 @@ body {
     background: url(../../images/bg-mobile.svg) no-repeat, $bg-color;
     background-size: $full-width;
     padding: 30px;
-    @include desktop {
+    @include computer {
         background: url(../../images/bg-desktop.svg) no-repeat, $bg-color;
         padding: 50px 70px 0 70px;
-
     }
 }
 
@@ -17,16 +16,27 @@ body {
 }
 
 #landing-page {
-    @include desktop {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include computer {
         display: flex;
         margin-top: 75px;
     }
     &__text {
-        @include desktop {
+        @include tablet {
+            width: 325px;
+            justify-self: center;
+        }
+        @include computer {
             display: flex;
             flex-direction: column;
-            width: 45%;
             padding-left: 65px;
+        }
+        @include desktop {
+            width: 45%;
         }
         @include large-screen {
             width: 690px;
@@ -40,12 +50,16 @@ body {
 #main-illustration {
     width: $full-width;
     margin: 50px 0;
+    @include tablet {
+        width: 325px;
+    }
     @include desktop {
         width: 55%;
         margin: 0;
     }
     @include large-screen {
         width: 740px;
+        margin: 0;
     }
 }
 

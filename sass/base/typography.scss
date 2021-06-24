@@ -25,7 +25,7 @@ a {
 h1 {
     font-family: $h1-font;
     font-size: map-get($h1-size, mobile);
-    @include desktop {
+    @include computer {
         font-size: map-get($h1-size, desktop);
     }
 }
@@ -33,14 +33,14 @@ h1 {
 p {
     font-family: $p-font;
     font-size: map-get($p-size, mobile);
-    @include desktop {
+    @include computer{
         font-size: map-get($p-size, desktop);
     }
 }
 
 h1, p {
     text-align: center;
-    @include desktop {
+    @include computer {
         text-align: left;
     }
 }

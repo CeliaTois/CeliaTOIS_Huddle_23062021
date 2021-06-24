@@ -1,10 +1,21 @@
-@mixin desktop {
+@mixin tablet {
+    @media (min-width: 376px) and (max-width: 1149px) {
+        @content;
+    }
+}
+
+@mixin computer {
     @media (min-width: 1150px) {
         @content;
     }
 }
 
-@mixin large-screen {
+@mixin desktop {
+    @media (min-width: 1150px) and (max-width: 1549px) {
+        @content;
+    }
+
+}@mixin large-screen {
     @media (min-width: 1550px) {
         @content;
     }

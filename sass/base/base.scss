@@ -1,9 +1,10 @@
 body {
     background: url(../../images/bg-mobile.svg) no-repeat, $bg-color;
-    background-size: $full-width;
+    background-size: cover;
     padding: 30px;
     @include computer {
         background: url(../../images/bg-desktop.svg) no-repeat, $bg-color;
+        background-size: cover;
         padding: 50px 70px 0 70px;
     }
 }

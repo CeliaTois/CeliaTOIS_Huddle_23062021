@@ -24,6 +24,7 @@
     }
     &:hover {
         @include sm-border ($color: $hover-color);
+        cursor: pointer;
         &>.social-media__icon {
             color: $hover-color;
         }

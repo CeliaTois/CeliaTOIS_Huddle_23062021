@@ -3,12 +3,13 @@
 /* Footer */
 body {
   background: url(../../images/bg-mobile.svg) no-repeat, #674baf;
-  background-size: 100%;
+  background-size: cover;
   padding: 30px;
 }
 @media (min-width: 1150px) {
   body {
     background: url(../../images/bg-desktop.svg) no-repeat, #674baf;
+    background-size: cover;
     padding: 50px 70px 0 70px;
   }
 }
@@ -209,6 +210,7 @@ button:hover {
 }
 .social-media:hover {
   border: 1px #e882e8 solid;
+  cursor: pointer;
 }
 .social-media:hover > .social-media__icon {
   color: #e882e8;
